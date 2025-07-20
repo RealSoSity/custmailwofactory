@@ -1,7 +1,7 @@
 package customermailapplication;
 
 public class CustomerFactory {
-    public static Customer CustomerFactory(String customerType)
+    public static Customer createCustomer(String customerType)
     {
         if(customerType.equals("Regular")){
             return new RegularCustomer();
